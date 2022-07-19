@@ -267,3 +267,35 @@ footer {
 .footer-navigation a:hover {
     color: #DD0000
 }
+
+/*-----------------------
+    Match Pages
+------------------------*/
+.match-vs-match {
+    padding: 52px 30px;
+    box-shadow: 0 0 2px #ddd;
+}
+
+.match-vs-mantch-top {
+    display: grid;
+    grid-template-columns: 93px auto 93px;
+    justify-content: space-between;
+}
+
+.match-vs-mantch-bottom {
+    text-align: center;
+}
+
+.match-vs-mantch-bottom h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: #161616;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.match-vs-mantch-bottom p {
+    color: #4D4D4D;
+    margin-bottom: 0;
+}
