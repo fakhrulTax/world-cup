@@ -384,4 +384,8 @@ footer {
         margin-bottom: 10px;
     }
 
+    .social-nav .footer-navigation {
+        flex-direction: row;
+    }
+
 }
