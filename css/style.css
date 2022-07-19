@@ -1,132 +1,3 @@
-Reset CSS @charset "UTF-8";
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 /* Initial CSS */
 
 * {
@@ -168,6 +39,31 @@ body {
     border-radius: 5px;
     padding: 16px 25px;
     text-decoration: none;
+    display: inline-block;
+    transition: transform 300ms ease-in-out;
+}
+
+.btn-regular:hover {
+    transform: translateY(-10px);
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: #161616;
 }
 
 /*----------------------------
@@ -214,4 +110,160 @@ header {
 .banner-image img {
     width: 581px;
     height: 613px;
+    display: block;
+}
+
+.regular-header {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #161616;
+}
+
+/*----------------------------
+    Math Section
+------------------------------*/
+.match-area {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.match-menu {
+    height: 100%;
+    width: 312px;
+    background: #161616;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.match-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.match-navigation li a {
+    display: block;
+    width: 100%;
+    color: #161616;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.match-navigation li:last-child a {
+    margin-bottom: 0;
+}
+
+.match-navigation li a:hover,
+.match-active {
+    color: #FFFFFF !important;
+    background: #DD0000 !important;
+}
+
+.matches {
+    width: calc(100% - 312px - 24px);
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+
+}
+
+.match {
+    box-shadow: 0 0 2px #ddd;
+}
+
+.match-thumb {
+    width: 100%;
+    height: 175px;
+    margin-bottom: 20px;
+}
+
+.match-info {
+    padding: 0 20px;
+}
+
+.match-button {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #161616;
+    transition: all 300ms ease-in-out;
+}
+
+.match-button:hover {
+    color: #FFFFFF;
+    background: #DD0000;
+}
+
+.match-info>h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.duration-comment {
+    display: flex;
+}
+
+.duration,
+.duration-comment {
+    margin-right: 30px;
+    font-size: 1rem;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/* -------------------
+    Footer 
+----------------------*/
+footer {
+    background: #161616;
+}
+
+.goal {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.goal h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer-nav,
+.social-nav {
+    padding: 50px 0;
+}
+
+.footer-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-navigation a {
+    color: #B9B9B9;
+    padding: 10px 20px;
+}
+
+.footer-navigation a:hover {
+    color: #DD0000
 }
