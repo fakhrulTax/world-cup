@@ -157,6 +157,7 @@ header {
     margin-bottom: 30px;
     border-radius: 10px;
     transition: all 300ms ease-in-out;
+    border: 1px solid #ddd;
 }
 
 .match-navigation li:last-child a {
@@ -199,6 +200,7 @@ header {
     text-decoration: none;
     color: #161616;
     transition: all 300ms ease-in-out;
+    display: inline-block;
 }
 
 .match-button:hover {
@@ -298,4 +300,88 @@ footer {
 .match-vs-mantch-bottom p {
     color: #4D4D4D;
     margin-bottom: 0;
+}
+
+/*----------------------------------
+    Responsive CSS
+-----------------------------------*/
+
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header {
+        margin-top: 10px;
+        margin-bottom: 24px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-info {
+        width: 100%;
+        margin-right: 0;
+        padding: 38px 28px;
+        text-align: center;
+    }
+
+    .large-header {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .banner-info>p {
+        font-size: 0.875rem;
+        line-height: 1.50rem;
+        margin-bottom: 16px;
+    }
+
+    .banner-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-image img {
+        width: 233px;
+        height: 245px;
+    }
+
+    .match-area {
+        display: flex;
+        margin-bottom: 24px;
+        flex-direction: column;
+    }
+
+    .match-menu {
+        background: #FFFFFF;
+    }
+
+    .matches {
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+    }
+
+    .goal {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-navigation a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
 }
