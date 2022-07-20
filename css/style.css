@@ -224,6 +224,10 @@ header {
     color: rgba(22, 22, 22, 0.7);
 }
 
+.pagination {
+    display: none;
+}
+
 /* -------------------
     Footer 
 ----------------------*/
@@ -387,6 +391,94 @@ footer {
 
     .social-nav .footer-navigation {
         flex-direction: row;
+    }
+
+}
+
+/* Tablet Device */
+
+@media screen and (min-width: 577px) and (max-width: 1320px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .banner-info {
+        margin-right: 24px;
+        padding-left: 76px;
+    }
+
+    .large-header {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .banner-info>p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    header {
+        margin-bottom: 70px;
+    }
+
+    .match-area {
+        flex-direction: column;
+    }
+
+    .match-menu {
+        width: 100%;
+        height: 115px;
+        background: #FFFFFF;
+    }
+
+    .match-navigation {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 22px;
+    }
+
+    .match-navigation li a {
+        font-size: 1.125rem;
+    }
+
+    .matches {
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+
+    .pagination {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    .match-area {
+        margin-bottom: 70px;
+    }
+
+    .goal {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    .footer-navigation {
+        flex-wrap: wrap;
+    }
+
+    .footer-navigation li {
+        margin-bottom: 20px;
     }
 
 }
