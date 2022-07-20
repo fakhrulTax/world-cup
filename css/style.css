@@ -185,8 +185,8 @@ header {
 
 .match-thumb {
     width: 100%;
-    height: 175px;
     margin-bottom: 20px;
+    display: block;
 }
 
 .match-info {
@@ -358,6 +358,7 @@ footer {
     }
 
     .match-menu {
+        width: 100%;
         background: #FFFFFF;
     }
 
